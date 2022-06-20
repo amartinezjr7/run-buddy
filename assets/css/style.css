@@ -29,15 +29,19 @@ header a{
 header nav{
     margin: 7px 0;
 }
-header nav ul li {
-    /*adding a display:inline moves the elements under the nav ul li block from a list to one line*/
-    display: inline;
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 /*this minipulates the inline we just created, so now it is more presentable*/
 header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 body{
